@@ -95,13 +95,20 @@ Do the following after selecting box 16 and storing in variable named box16
   - Focus on the difference between element and node
 */
 
-let box16 = document.getElementsByClassName('sixteen');
-console.log(box16.parentNode); 
-box16.childNodes;
-box16.previousSibling;
+let box16 = document.getElementsByClassName('.sixteen');
+console.log(box16.parentElement); 
+console.log(box16.childNodes);
+console.log(box16.previousSiblinh);
 console.log(box16.nextSibling);
-box16.firstChild;
-box16.lastChild;
+console.log(box16.firstChild);
+console.log(box16.lastChild);
+
+
+console.log(box16.parentElement);
+console.log(box16. previousElementSibling);
+console.log(box16.nextElementSibling);
+console.log(box16.firstElementChild);
+console.log(box16.lastElementChild);
 
 
 
@@ -140,12 +147,13 @@ rm.style.fontSize = "0.8rem";
 
 // Change the background of all the alternate boxes (1, 3, 5, ....) to aliceblue
 
-// let boxes = document.querySelector(".box");
-// boxes.forEach((e,index) => {
-//   if((index + 1) % 2 !== 0) {
-//     e.style.backgroundColor = "aliceblue";
-//   }
-// })
+let allBoxes = document.querySelectorAll('.box');
+
+allBoxes.forEach((elm,index) => {
+  if((index + 1) % 2 !== 0) {
+    elm.style.backgroundColor = "aliceblue";
+  }
+})
 
 // add a class named "awesome-box" to the box 6 using classList property of DOM element.
 
