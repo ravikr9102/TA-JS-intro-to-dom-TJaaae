@@ -1,0 +1,82 @@
+/* general styles starts here  */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  html{
+      font-size: 62.5%;
+      font-family: 'Poppins',sans-serif;
+  }
+  body{
+    background-color: antiquewhite;
+  }
+  
+  :root{
+    --primaryColor : #377E80;
+  }
+  a{
+    text-decoration: none;
+  }
+  /* header starts here   */
+header{
+    width: 100%;
+    background-color: var(--primaryColor);
+    padding: 2rem 0;
+    text-align: center;
+  }
+  header a {
+    color: yellow;
+    font-size:3rem;
+    font-weight: 700;
+  }
+  /* header ends here  */
+  
+  /* main starts here  */
+  
+  
+  #book-card{
+    width: 100%;
+    padding:  0 9%;
+  }
+  .card-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+  }
+/* flexBox code */
+
+.card{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    flex: 0 1 30%;
+    padding: 2rem;
+    background-color: #fff;
+    margin: 2rem 0 0 0;
+  }
+  
+  .card img{
+    width: 40%;
+  }
+
+  .card h2{
+    font-weight: 700;
+    margin: 0.5rem 0;
+  }
+  .card .authorName {
+    margin: 1.2rem;
+    font-size: 1.4rem;
+    color: gray;
+  }
+  .card .card-btn{
+    padding: .6rem 1.6rem;
+    background-color: var(--primaryColor);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    margin: 0.5rem 0;
+  }    
