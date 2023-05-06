@@ -1,4 +1,3 @@
-
 let data = {
     books: [
       {
